@@ -271,10 +271,6 @@ const authenticateUser = (req, res, next) => {
 app.post('/checkout',authenticateUser, async (req, res) => {
   const { name, address, email, cart } = req.body;
   const userId = req.user.id;
-
-  
-  
-  
   
   try {
     const order = new Order({
