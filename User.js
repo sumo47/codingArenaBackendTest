@@ -26,6 +26,7 @@ const UserScheme = mongoose.Schema({
    otp: {
     type: Number,
   },
+ 
 });
 const User = mongoose.model("user", UserScheme);
 
